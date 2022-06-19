@@ -1,5 +1,5 @@
 # price-scraper
-This program runs through pricecharter.com to find the total of any set of games, comics, etc., put together.
+This program runs through pricecharting.com to find the total of any set of games, comics, etc., put together.
  
 Before you use this program, you will need to download Python, as well as a few packages.
 To install Python, [click here](https://www.python.org/downloads/) and select your operating system.
