@@ -1,4 +1,4 @@
-# price-scraper
+# Price-Scraper
 This program runs through pricecharting.com to find the total of any set of games, comics, etc., put together.
 
 To use the program you must know a few things: the console and the product ID of the game you are trying to add.
