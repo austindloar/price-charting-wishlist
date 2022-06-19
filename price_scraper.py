@@ -314,3 +314,5 @@ new_list.append(sum(new_list))
 
 info_t = {'Title': name_list, 'Loose Price': loose_list, 'CIB Price': cib_list, 'New Price': new_list}
 print(tabulate(info_t, headers='keys', tablefmt='fancy_grid'))
+
+k = input("Press close to exit the program.")
