@@ -6,4 +6,3 @@ The product ID can be found by searching it on pricecharting.com and hovering ov
 
 I plan on adding support for PAL and Japan region games in the future, but NTSC is currently the only region supported.
 Please suggest any features that you would like to see added and I hope this program is of use to you!
-
