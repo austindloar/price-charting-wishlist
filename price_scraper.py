@@ -8,7 +8,7 @@ name_list = []
 loose_list = []
 cib_list = []
 new_list = []
-add_game = True
+
 
 nnes = "https://www.pricecharting.com/console/nes"
 nsnes = "https://www.pricecharting.com/console/super-nintendo"
@@ -229,7 +229,7 @@ def var_entry():
     cib_list.append(cib)
     new_list.append(new)
                         
-while add_game == True:    
+while True:    
     print("Available Nintendo consoles:")
     print("NES")
     print("SNES")
@@ -293,19 +293,14 @@ while add_game == True:
 
     info()
     var_entry()
-
-    bad_input = True
-    while bad_input:    
-        restart = input("Would you like to add another game? (Y/N) ")
-        if restart == "Y":
-            bad_input = False
-            add_game = True
-        elif restart == "N":
-            bad_input = False
-            add_game = False
-        else:
-            bad_input = True
-            print("Unknown input. Try again")
+    
+    restart = input("Would you like to add another game? (Y/N) ")
+    if restart == "Y":
+        continue
+    elif restart == "N":
+        break
+    else:
+        print("Unknown input. Try again")
 
 name_list.append('Total')
 loose_list.append(sum(loose_list))
