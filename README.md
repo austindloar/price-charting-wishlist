@@ -1,8 +1,7 @@
-# Price-Scraper
-This program runs through pricecharting.com to find the total of any set of games, comics, etc., put together.
+# Price-Charting-Wishlist
+This program is used to find the sum of your pricecharting.com wishlist.
 
-To use the program you must know a few things: the console and the product ID of the game you are trying to add.
-The product ID can be found by searching it on pricecharting.com and hovering over the title. The ID will be a series of numbers.
+Using this program is simple: input the URL to your wishlist, and the program will do the rest for you!
+Keep in mind that the larger your wishlist, the longer the program will take to finish. If it looks like it isn't doing anything wait (it can take up to 3-5 minutes) for the program to complete.
 
-I plan on adding support for PAL and Japan region games in the future, but NTSC is currently the only region supported.
-Please suggest any features that you would like to see added and I hope this program is of use to you!
+Be sure to let me know of any problems through the repository issues page, or any features that you would like to see come to this program.
