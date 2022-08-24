@@ -1,4 +1,5 @@
 from os import name
+from types import NoneType
 import requests
 from bs4 import BeautifulSoup
 from datetime import date
@@ -56,6 +57,8 @@ def info(): #Parses through HTML of given search URL for all three prices
         rows = game.find_all('tr')
         for row in rows:
             title = row.find('td', class_='title')
+            if type(title) == NoneType:
+                continue
             name_i = title.text.strip()
             if name_i == name:
                 break
@@ -75,8 +78,10 @@ def info(): #Parses through HTML of given search URL for all three prices
 r = requests.get(wishlist)
 soup = BeautifulSoup(r.text, 'html.parser')
 wish_t = soup.find('table', id='games_table')
+
 getWish()
 search()
+
 name_list.append('Total')
 loose_list.append(sum(loose_list))
 cib_list.append(sum(cib_list))
